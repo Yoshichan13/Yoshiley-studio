@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakura Sparkle Jewelry</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f5;
+    color: #444;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffc0cb;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffe4ec, #fff);
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #ff69b4;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* About */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Products */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.price {
+    color: #ff69b4;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contact */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffe4ec;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Sakura Sparkle</h1>
+    <p>Sweet & Elegant Japanese Style Jewelry</p>
+</section>
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Sakura Sparkle Jewelry is inspired by Japanese sweetness and elegance.
+        Our designs are soft, delicate, and perfect for everyday beauty.
+        We believe every girl deserves a little sparkle.
+    </p>
+</section>
+
+<section class="products" id="products">
+    <h2>Our Collection</h2>
+    <div class="product-container">
+        
+        <div class="product-card">
+    <img src="IMG_6934.jpeg" alt="White Chalcedony Necklace">
+    <h3>White Chalcedony Longevity Lock Pendant Necklace</h3>
+    <p class="price">฿199</p>
+</div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0" alt="Ring">
+            <h3>Pink Crystal Ring</h3>
+            <p class="price">$29</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" alt="Earrings">
+            <h3>Soft Pearl Earrings</h3>
+            <p class="price">$35</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We would love to hear from you ♡</p>
+    <form action="https://formspree.io/f/meelkwdd" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required><br>
+
+    <input type="email" name="email" placeholder="Your Email" required><br>
+
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+
+    <button type="submit">Send Message</button>
+
+</form>
+</section>
+
+</body>
+</html>
